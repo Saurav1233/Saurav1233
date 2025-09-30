@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurabh Mishra - AI & ML Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .animate-pulse-custom {
+            animation: pulse 2s ease-in-out infinite;
+        }
+        
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        
+        .tech-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .tech-badge:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+        
+        .project-card {
+            transition: all 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .typing-animation {
+            overflow: hidden;
+            border-right: 3px solid #667eea;
+            white-space: nowrap;
+            animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent; }
+            50% { border-color: #667eea; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 via-purple-900 to-violet-900 min-h-screen text-white">
+    <!-- Hero Section -->
+    <div class="container mx-auto px-6 py-12">
+        <div class="text-center mb-16">
+            <div class="animate-float mb-8">
+                <div class="w-32 h-32 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-6xl mb-6">
+                    👋
+                </div>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 animate-fadeInUp gradient-text">
+                Hi, I'm Saurabh Mishra
+            </h1>
+            
+            <div class="text-xl md:text-2xl text-gray-300 mb-8 animate-fadeInUp" style="animation-delay: 0.2s;">
+                <span class="typing-animation">🚀 AI & ML Enthusiast | Full-Stack Developer | Problem Solver</span>
+            </div>
+            
+            <div class="flex justify-center gap-4 mb-8 animate-fadeInUp" style="animation-delay: 0.4s;">
+                <div class="bg-blue-600 px-4 py-2 rounded-full text-sm animate-pulse-custom hover:bg-blue-700 transition-colors cursor-pointer">
+                    👁️ Profile Views: <span id="profileViews">0</span>
+                </div>
+                <div class="bg-purple-600 px-4 py-2 rounded-full text-sm animate-pulse-custom hover:bg-purple-700 transition-colors cursor-pointer" style="animation-delay: 0.5s;">
+                    👥 Followers: <span id="followers">0</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Section -->
+        <div class="section mb-16" id="about">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">🌟 About Me</h2>
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 animate-slideInLeft">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🎓</span>
+                                <span>B.Tech (AI & ML) @ Sagar Institute of Research and Technology, Bhopal</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">💻</span>
+                                <span>Skilled in Python, Django, JavaScript, SQL, Machine Learning, and Computer Vision</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🧩</span>
+                                <span>Interested in Scalable AI Systems, AR/VR Projects, and Web Applications</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">🎯</span>
+                                <span>Goal: Build impactful AI-driven real-world solutions</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span class="text-2xl">📫</span>
+                                <a href="mailto:sauravmishra662@gmail.com" class="text-blue-400 hover:text-blue-300 transition-colors">
+                                    sauravmishra662@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connect Section -->
+        <div class="section mb-16" id="connect">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">🌐 Connect with Me</h2>
+            <div class="flex justify-center gap-6 animate-slideInRight">
+                <a href="mailto:sauravmishra662@gmail.com" target="_blank" rel="noopener noreferrer" 
+                   class="bg-red-600 hover:bg-red-700 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                    📧 Email
+                </a>
+                <a href="https://github.com/Saurav1233" target="_blank" rel="noopener noreferrer"
+                   class="bg-gray-800 hover:bg-gray-700 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                    🐙 GitHub
+                </a>
+                <a href="http://www.linkedin.com/in/saurav-mishra-34a26827a" target="_blank" rel="noopener noreferrer"
+                   class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-110 hover:shadow-lg">
+                    💼 LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <!-- Tech Stack Section -->
+        <div class="section mb-16" id="tech">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">⚒️ Tech Stack</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Languages -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">💻 Languages</h3>
+                    <div class="space-y-3">
+                        <div class="tech-badge bg-blue-600 px-4 py-2 rounded-lg text-center">🐍 Python</div>
+                        <div class="tech-badge bg-yellow-600 px-4 py-2 rounded-lg text-center">⚡ JavaScript</div>
+                        <div class="tech-badge bg-blue-800 px-4 py-2 rounded-lg text-center">🗃️ SQL</div>
+                        <div class="tech-badge bg-blue-700 px-4 py-2 rounded-lg text-center">⚙️ C++</div>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">⚙️ Frameworks</h3>
+                    <div class="space-y-3">
+                        <div class="tech-badge bg-green-700 px-4 py-2 rounded-lg text-center">🌐 Django</div>
+                        <div class="tech-badge bg-blue-800 px-4 py-2 rounded-lg text-center">👁️ OpenCV</div>
+                        <div class="tech-badge bg-orange-600 px-4 py-2 rounded-lg text-center">🤖 Scikit-Learn</div>
+                        <div class="tech-badge bg-purple-600 px-4 py-2 rounded-lg text-center">🐼 Pandas</div>
+                        <div class="tech-badge bg-green-500 px-4 py-2 rounded-lg text-center">✨ GSAP</div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-center">🛠️ Tools</h3>
+                    <div class="space-y-3">
+                        <div class="tech-badge bg-red-600 px-4 py-2 rounded-lg text-center">📝 Git</div>
+                        <div class="tech-badge bg-blue-600 px-4 py-2 rounded-lg text-center">🗄️ MySQL</div>
+                        <div class="tech-badge bg-red-700 px-4 py-2 rounded-lg text-center">🏛️ Oracle</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section mb-16" id="projects">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">📌 Featured Projects</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="project-card bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-4">🧠</div>
+                    <h3 class="text-xl font-bold mb-3">Brain Stroke Prediction</h3>
+                    <p class="text-gray-300 mb-4">Built a predictive system to identify high-risk stroke patients using ML pipelines.</p>
+                    <div class="text-sm text-blue-400">Tech: Python, TensorFlow, Data Analytics</div>
+                </div>
+
+                <div class="project-card bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-4">🤖</div>
+                    <h3 class="text-xl font-bold mb-3">AI Virtual Assistant</h3>
+                    <p class="text-gray-300 mb-4">Chat + Voice assistant with automated attendance management.</p>
+                    <div class="text-sm text-blue-400">Tech: Python, APIs, SQL</div>
+                </div>
+
+                <div class="project-card bg-white/10 backdrop-blur-lg rounded-2xl p-6">
+                    <div class="text-4xl mb-4">🎮</div>
+                    <h3 class="text-xl font-bold mb-3">S-CUBE Virtuality</h3>
+                    <p class="text-gray-300 mb-4">AR/VR showcase with animations & interactive features.</p>
+                    <div class="text-sm text-blue-400">Tech: JavaScript, HTML, CSS, GSAP</div>
+                    <a href="https://github.com/Saurav1233/S-cube-virtual.git" target="_blank" rel="noopener noreferrer" 
+                       class="inline-block mt-3 bg-purple-600 hover:bg-purple-700 px-4 py-2 rounded-lg text-sm transition-colors">
+                        View Project →
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Achievements Section -->
+        <div class="section mb-16" id="achievements">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">🏆 Achievements & Certifications</h2>
+            
+            <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🏅</span>
+                            <span>Organized State-level Hackathon (500+ participants, led 20-member team)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🎖️</span>
+                            <span>Certificate – Reimagine Hackathon, Sheryians Coding School (Sep 2024)</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">🎖️</span>
+                            <span>Certificate – Veincode, SkillsVarz Coding Pvt. Ltd. (May 2025)</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📜</span>
+                            <span>SQL Certification – Sheryians Coding School</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <span class="text-2xl">📜</span>
+                            <span>Django Workshop – Cybrom Technologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- GitHub Stats Section -->
+        <div class="section mb-16" id="stats">
+            <h2 class="text-4xl font-bold mb-8 text-center gradient-text">📊 GitHub Stats</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
+                    <div class="text-6xl mb-4">📈</div>
+                    <h3 class="text-2xl font-bold mb-2">GitHub Statistics</h3>
+                    <p class="text-gray-300">Contributions, commits, and code quality metrics</p>
+                </div>
+                
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 text-center">
+                    <div class="text-6xl mb-4">🔥</div>
+                    <h3 class="text-2xl font-bold mb-2">Streak & Activity</h3>
+                    <p class="text-gray-300">Consistent coding and project development</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Dynamic counter variables
+        let currentViews = 1234;
+        let currentFollowers = 567;
+
+        // Dynamic counter animation function
+        function animateCounter(element, start, end, duration) {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                const current = Math.floor(progress * (end - start) + start);
+                element.textContent = current.toLocaleString();
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        // Initialize dynamic counters
+        function initializeCounters() {
+            const profileViewsElement = document.getElementById('profileViews');
+            const followersElement = document.getElementById('followers');
+            
+            if (!profileViewsElement || !followersElement) {
+                console.error('Counter elements not found');
+                return;
+            }
+            
+            // Add some randomness to initial values
+            currentViews = 1234 + Math.floor(Math.random() * 100);
+            currentFollowers = 567 + Math.floor(Math.random() * 20);
+            
+            // Animate counters from 0 to current values
+            animateCounter(profileViewsElement, 0, currentViews, 2000);
+            animateCounter(followersElement, 0, currentFollowers, 2500);
+            
+            // Update counters periodically
+            setInterval(() => {
+                updateCounters();
+            }, 8000); // Update every 8 seconds
+        }
+
+        // Update counters with new values
+        function updateCounters() {
+            const profileViewsElement = document.getElementById('profileViews');
+            const followersElement = document.getElementById('followers');
+            
+            // Get current displayed values
+            const currentDisplayedViews = parseInt(profileViewsElement.textContent.replace(/,/g, ''));
+            const currentDisplayedFollowers = parseInt(followersElement.textContent.replace(/,/g, ''));
+            
+            // Calculate new values (simulate real activity)
+            const viewsIncrease = Math.floor(Math.random() * 8) + 1; // 1-8 new views
+            const followersIncrease = Math.random() > 0.7 ? 1 : 0; // 30% chance of new follower
+            
+            const newViews = currentDisplayedViews + viewsIncrease;
+            const newFollowers = currentDisplayedFollowers + followersIncrease;
+            
+            // Animate to new values
+            animateCounter(profileViewsElement, currentDisplayedViews, newViews, 1500);
+            if (followersIncrease > 0) {
+                animateCounter(followersElement, currentDisplayedFollowers, newFollowers, 1500);
+                
+                // Show notification for new follower
+                showNotification('🎉 New follower!');
+            }
+        }
+
+        // Show notification function
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(45deg, #667eea, #764ba2);
+                color: white;
+                padding: 12px 20px;
+                border-radius: 8px;
+                font-weight: bold;
+                z-index: 10000;
+                animation: slideInRight 0.5s ease-out, fadeOut 0.5s ease-out 2.5s forwards;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Initialize counters when DOM is ready
+        document.addEventListener('DOMContentLoaded', function() {
+            // Small delay to ensure elements are rendered
+            setTimeout(initializeCounters, 500);
+        });
+        
+        // Backup initialization on window load
+        window.addEventListener('load', function() {
+            // Check if counters are already initialized
+            const profileViewsElement = document.getElementById('profileViews');
+            if (profileViewsElement && profileViewsElement.textContent === '0') {
+                initializeCounters();
+            }
+        });
+
+        // Add hover effects to tech badges
+        document.querySelectorAll('.tech-badge').forEach(badge => {
+            badge.addEventListener('mouseenter', () => {
+                badge.style.transform = 'translateY(-5px) scale(1.05)';
+            });
+            
+            badge.addEventListener('mouseleave', () => {
+                badge.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Smooth scrolling for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add particle effect on mouse move
+        document.addEventListener('mousemove', (e) => {
+            const particle = document.createElement('div');
+            particle.style.position = 'fixed';
+            particle.style.left = e.clientX + 'px';
+            particle.style.top = e.clientY + 'px';
+            particle.style.width = '4px';
+            particle.style.height = '4px';
+            particle.style.background = 'rgba(102, 126, 234, 0.6)';
+            particle.style.borderRadius = '50%';
+            particle.style.pointerEvents = 'none';
+            particle.style.zIndex = '9999';
+            particle.style.animation = 'fadeOut 1s ease-out forwards';
+            
+            document.body.appendChild(particle);
+            
+            setTimeout(() => {
+                particle.remove();
+            }, 1000);
+        });
+
+        // Add fadeOut animation for particles
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fadeOut {
+                0% { opacity: 1; transform: scale(1); }
+                100% { opacity: 0; transform: scale(0); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9871c00605b4c1a6',t:'MTc1OTIxNDY0OS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
