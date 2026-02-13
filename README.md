@@ -64,18 +64,6 @@ Engineer skilled in **Python, JavaScript, SQL, and C/C++**, with experience buil
 </details>
 
 <details>
-<summary><b>🤖 AI Virtual Assistant</b></summary>
-<br>
-
-- Built an intelligent assistant with **chat and voice interfaces**, including automated attendance management
-- Developed modular **backend APIs** and ensured **scalable design**
-- **Tech Stack:** Python, APIs, SQL
-
-[![Repo](https://img.shields.io/badge/View_Repository-181717?style=for-the-badge&logo=github)](https://github.com/Saurav1233)
-
-</details>
-
-<details>
 <summary><b>🎓 Physiovigyan - Educational Management System</b></summary>
 <br>
 
